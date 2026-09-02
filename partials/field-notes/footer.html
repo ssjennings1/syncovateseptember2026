@@ -1,0 +1,135 @@
+<!-- ============================================================
+     SYNCOVATE — FOOTER + SATURDAY SEED (Field Notes / blog page)
+     Paste as ONE custom-code element at the bottom of the blog page.
+     Turn off GHL's default "Copyrights 2026 | Terms" footer.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal:      #56ADBF;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif:     'Cormorant Garamond', Georgia, serif;
+  --sy-sans:      'DM Sans', system-ui, -apple-system, sans-serif;
+  --wrap:         1120px;
+  --wrap-text:    680px;
+}
+.sy-footer *{margin:0;padding:0;box-sizing:border-box}
+.sy-footer{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream)}
+.sy-footer a{color:inherit;text-decoration:none}
+.sy-footer a:focus-visible,.sy-footer button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-footer .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.sy-footer .btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--sy-sans);font-weight:500;font-size:14px;
+  letter-spacing:0.02em;line-height:1;
+  padding:17px 30px;border-radius:2px;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .12s ease;
+  white-space:nowrap;
+}
+.sy-footer .btn:active{transform:translateY(1px)}
+.sy-footer .btn-gold{background:var(--sy-gold);color:var(--sy-white);border:1px solid var(--sy-gold)}
+.sy-footer .btn-gold:hover{background:var(--sy-gold-deep);border-color:var(--sy-gold-deep)}
+.sy-footer .btn-line{background:transparent;color:var(--sy-charcoal);border:1px solid var(--sy-charcoal2)}
+.sy-footer .btn-line:hover{border-color:var(--sy-teal-deep);color:var(--sy-teal-deep)}
+.sy-footer .textlink{
+  color:var(--sy-teal-deep);
+  border-bottom:1px solid rgba(86,173,191,0.45);
+  padding-bottom:1px;
+  transition:border-color .18s ease,color .18s ease;
+}
+.sy-footer .textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+.sy-footer .textlink{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45);padding-bottom:1px}
+.sy-footer .textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+.sy-footer .seed{
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+  padding:0 0 56px;margin-bottom:56px;border-bottom:1px solid var(--sy-rule);
+}
+.sy-footer .seed-name{font-family:var(--sy-serif)!important;font-size:30px!important;font-weight:500!important;letter-spacing:0!important;margin-bottom:8px!important}
+.sy-footer .seed p{font-size:16px;color:var(--sy-ink);max-width:36ch}
+.sy-footer .seed-form{display:flex;gap:10px}
+.sy-footer .seed-form input{
+  flex:1;min-width:0;font-family:var(--sy-sans);font-size:15px;font-weight:300;
+  padding:15px 16px;border:1px solid var(--sy-charcoal2);border-radius:2px;
+  background:var(--sy-white);color:var(--sy-charcoal);
+}
+.sy-footer .seed-form input:focus{outline:2px solid var(--sy-gold);outline-offset:2px;border-color:var(--sy-gold)}
+.sy-footer .seed-form input::placeholder{color:var(--sy-ink-soft)}
+.sy-footer .seed-form .btn{padding:15px 24px;cursor:pointer}
+.sy-footer .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:840px){.seed{grid-template-columns:1fr;gap:20px}}
+@media (max-width:520px){.seed-form{flex-direction:column}.seed-form .btn{width:100%}}
+.sy-footer .sy-footer-inner{padding:64px 0 40px;border-top:1px solid var(--sy-rule)}
+.sy-footer .sy-footer-inner .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.sy-footer .sy-footer-inner .brand{font-size:19px}
+.sy-footer .sy-footer-inner .tag{margin-top:14px;font-size:15px;color:var(--sy-ink-soft);max-width:34ch;line-height:1.6}
+.sy-footer-inner h4{font-family:var(--sy-sans);font-weight:500;font-size:13px;color:var(--sy-charcoal);margin-bottom:14px;letter-spacing:0.04em}
+.sy-footer-inner ul{list-style:none}
+.sy-footer-inner li{margin-bottom:10px;font-size:15px}
+.sy-footer-inner li a{color:var(--sy-ink);border-bottom:1px solid transparent;transition:border-color .18s}
+.sy-footer-inner li a:hover{border-bottom-color:var(--sy-gold)}
+.sy-footer .sy-footer-inner .bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--sy-rule);font-size:13.5px;color:var(--sy-ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:840px){.sy-footer .top{grid-template-columns:1fr;gap:36px}}
+@media (max-width:520px){.sy-footer .wrap{padding:0 22px}}
+.sy-footer .brand{font-family:var(--sy-serif);font-weight:600;font-size:19px;letter-spacing:0.08em;text-transform:uppercase;color:var(--sy-charcoal)}
+</style>
+<div class="sy-footer">
+<footer class="sy-footer-inner">
+  <div class="wrap">
+    <div class="seed">
+      <div>
+        <h4 class="seed-name">Saturday Seed</h4>
+        <p>One short email every Saturday. A thought worth carrying into the week. No pitch.</p>
+      </div>
+      <!-- GHL: replace this form with your Saturday Seed form embed. Keep the .seed-form class on the wrapper so the layout holds. -->
+      <form class="seed-form" action="#" method="post" onsubmit="return false">
+        <label class="sr" for="seedEmail">Email address</label>
+        <input id="seedEmail" type="email" name="email" placeholder="your@email.com" required>
+        <button class="btn btn-gold" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="top">
+      <div>
+        <div class="brand">Syncovate</div>
+        <p class="tag">Organizational advisory for founders and owner-operators of growing, privately held companies. Based in Niles, Michigan. Working with leaders across Michiana and nationwide.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/how-i-work">How I Work</a></li>
+          <li><a href="https://syncovatellc.com/speaking">Speaking &amp; Facilitation</a></li>
+          <li><a href="https://syncovatellc.com/prism-blog">Field Notes</a></li>
+          <li><a href="https://syncovatellc.com/saturday-seed">Saturday Seed</a></li>
+          <li><a href="https://spotter.syncovatellc.com/">The Scotoma Spotter™</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
+          <li><a href="https://syncovatellc.com/contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/shannonsjennings/">LinkedIn</a></li>
+          <li><a href="tel:2692934442">269-293-4442</a></li>
+          <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
+          <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Syncovate LLC · Niles, Michigan</span>
+      <span>Dr. Shannon Jennings, PsyD</span>
+    </div>
+  </div>
+</footer>
+</div>

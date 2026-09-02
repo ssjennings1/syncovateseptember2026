@@ -1,0 +1,121 @@
+<!-- ============================================================
+     SYNCOVATE — NAV (Field Notes / blog page)
+     Paste as ONE custom-code element at the top of the blog page.
+     Self-contained: fonts + CSS + markup + mobile toggle.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal:      #56ADBF;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif:     'Cormorant Garamond', Georgia, serif;
+  --sy-sans:      'DM Sans', system-ui, -apple-system, sans-serif;
+  --wrap:         1120px;
+  --wrap-text:    680px;
+}
+.sy-nav *{margin:0;padding:0;box-sizing:border-box}
+.sy-nav{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream)}
+.sy-nav a{color:inherit;text-decoration:none}
+.sy-nav a:focus-visible,.sy-nav button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-nav .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.sy-nav .btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--sy-sans);font-weight:500;font-size:14px;
+  letter-spacing:0.02em;line-height:1;
+  padding:17px 30px;border-radius:2px;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .12s ease;
+  white-space:nowrap;
+}
+.sy-nav .btn:active{transform:translateY(1px)}
+.sy-nav .btn-gold{background:var(--sy-gold);color:var(--sy-white);border:1px solid var(--sy-gold)}
+.sy-nav .btn-gold:hover{background:var(--sy-gold-deep);border-color:var(--sy-gold-deep)}
+.sy-nav .btn-line{background:transparent;color:var(--sy-charcoal);border:1px solid var(--sy-charcoal2)}
+.sy-nav .btn-line:hover{border-color:var(--sy-teal-deep);color:var(--sy-teal-deep)}
+.sy-nav .textlink{
+  color:var(--sy-teal-deep);
+  border-bottom:1px solid rgba(86,173,191,0.45);
+  padding-bottom:1px;
+  transition:border-color .18s ease,color .18s ease;
+}
+.sy-nav .textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+.sy-nav .textlink{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45);padding-bottom:1px}
+.sy-nav .textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+.sy-nav-bar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,248,245,0.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--sy-rule);
+}
+.sy-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.sy-nav .brand{
+  font-family:var(--sy-serif);font-weight:600;font-size:22px;
+  letter-spacing:0.08em;text-transform:uppercase;color:var(--sy-charcoal);
+}
+.sy-nav .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.sy-nav .nav-links a{font-size:14.5px;font-weight:400;color:var(--sy-charcoal2);padding:6px 0;border-bottom:1px solid transparent;transition:border-color .18s}
+.sy-nav .nav-links a:hover,.sy-nav .nav-links a[aria-current]{color:var(--sy-charcoal);border-bottom-color:var(--sy-gold)}
+.sy-nav .nav-cta{display:flex;align-items:center;gap:14px}
+.sy-nav .nav-cta .btn{padding:13px 22px;font-size:13.5px}
+.sy-nav .nav-toggle{
+  display:none;background:none;border:1px solid var(--sy-rule);
+  width:44px;height:44px;border-radius:2px;cursor:pointer;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;
+}
+.sy-nav .nav-toggle span{display:block;width:20px;height:1.5px;background:var(--sy-charcoal);transition:transform .2s,opacity .2s}
+@media (max-width:840px){
+  .sy-nav .nav-links{display:none}
+  .sy-nav .nav-toggle{display:flex}
+  .sy-nav .sy-nav-bar.open .nav-links{
+    display:flex;flex-direction:column;align-items:flex-start;gap:0;
+    position:absolute;left:0;right:0;top:76px;
+    background:var(--sy-cream);border-bottom:1px solid var(--sy-rule);
+    padding:12px 32px 20px;
+  }
+  .sy-nav .sy-nav-bar.open .nav-links a{display:block;padding:14px 0;font-size:17px;width:100%;border-bottom:1px solid var(--sy-rule)}
+}
+@media (max-width:520px){.sy-nav .wrap{padding:0 22px}.sy-nav .sy-nav-bar.open .nav-links{padding:12px 22px 20px}}
+.sy-nav .sy-nav-bar{position:sticky;position:-webkit-sticky;top:0;z-index:50;background:rgba(250,248,245,0.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--sy-rule)}
+</style>
+<div class="sy-nav">
+<header class="sy-nav-bar" id="syNav">
+  <div class="wrap">
+    <a class="brand" href="https://syncovatellc.com/">Syncovate</a>
+    <ul class="nav-links" id="syNavLinks">
+      <li><a href="https://syncovatellc.com/">Home</a></li>
+      <li><a href="https://syncovatellc.com/how-i-work">How I Work</a></li>
+      <li><a href="https://syncovatellc.com/speaking">Speaking</a></li>
+      <li><a href="https://syncovatellc.com/prism-blog" aria-current="page">Field Notes</a></li>
+      <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a>
+      <button class="nav-toggle" id="syNavToggle" aria-label="Open menu" aria-expanded="false" aria-controls="syNavLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+</div>
+<script>
+(function(){
+  var nav=document.getElementById('syNav'),t=document.getElementById('syNavToggle');
+  if(!nav||!t)return;
+  t.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    t.setAttribute('aria-expanded',open?'true':'false');
+    t.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+})();
+</script>
