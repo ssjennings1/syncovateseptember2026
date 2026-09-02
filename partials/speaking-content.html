@@ -1,0 +1,228 @@
+<!-- ============================================================
+     SYNCOVATE — SPEAKING & FACILITATION — MIDDLE CONTENT
+     (Nav and Footer are your Global Sections — this goes in the
+     Custom Code block between them.)
+     Paste as ONE block. The closing "Let's discuss your event"
+     section is separate — see speaking-closing.html — paste it
+     in its own row directly below this one.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal:      #56ADBF;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-main *{margin:0;padding:0;box-sizing:border-box;text-align:left}
+.sy-main{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream);text-align:left}
+.sy-main a{color:inherit;text-decoration:none}
+.sy-main a:focus-visible,.sy-main button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-main strong{font-weight:500;color:var(--sy-charcoal)}
+.sy-main h1,.sy-main h2,.sy-main h3{text-wrap:balance}
+.sy-main p{max-width:640px}
+.sy-main .wrap{max-width:1120px;margin-left:auto!important;margin-right:auto!important;padding:0 32px}
+.sy-main .section{padding:100px 0}
+.sy-main .tint{background:var(--sy-warmgray)}
+p+p{margin-top:18px}
+
+.sy-main .eyebrow{font-size:12.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--sy-gold-deep);margin:0 0 16px}
+.sy-main .display{font-family:var(--sy-serif);font-weight:500;font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-0.01em;max-width:17ch;color:var(--sy-charcoal)}
+.sy-main h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(32px,3.6vw,44px);line-height:1.13;max-width:19ch;margin-bottom:20px;color:var(--sy-charcoal)}
+.sy-main h3{font-family:var(--sy-serif);font-weight:500;font-size:25px;line-height:1.2;color:var(--sy-charcoal)}
+.sy-main em.accent{font-style:italic;font-weight:500;color:var(--sy-gold-deep)}
+.sy-main .lede{font-size:19px;line-height:1.7;max-width:600px;color:var(--sy-charcoal2)}
+
+.sy-main .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:16px 26px!important;
+  border-radius:2px!important;white-space:nowrap!important;text-decoration:none!important;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.sy-main .btn-gold{background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important}
+.sy-main .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
+.sy-main .btn-line{background:transparent!important;color:var(--sy-charcoal)!important;border:1px solid var(--sy-charcoal2)!important}
+.sy-main .btn-line:hover{border-color:var(--sy-teal-deep)!important;color:var(--sy-teal-deep)!important}
+.sy-main .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- hero ---------- */
+.sy-main .open{padding:96px 0 84px}
+.sy-main .open .display{margin-bottom:28px}
+.sy-main .open .micro{margin-top:20px;font-size:15px;color:var(--sy-ink-soft)}
+
+/* ---------- approach ---------- */
+.sy-main .hook{font-family:var(--sy-serif);font-size:24px;line-height:1.35;color:var(--sy-charcoal);margin-bottom:22px}
+.sy-main .apart{list-style:none;margin:40px 0 0;border-top:1px solid var(--sy-rule);max-width:820px}
+.sy-main .apart li{display:grid;grid-template-columns:230px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--sy-rule)}
+.sy-main .apart b{font-family:var(--sy-serif);font-weight:500;font-size:22px;line-height:1.2;color:var(--sy-charcoal)}
+.sy-main .apart p{max-width:none;font-size:16px}
+
+/* ---------- sessions ---------- */
+.sy-main .formats{font-size:15.5px;color:var(--sy-ink-soft);margin-bottom:8px}
+.sy-main .sessions{list-style:none;margin-top:32px;border-top:1px solid var(--sy-rule)}
+.sy-main .session{padding:40px 0;border-bottom:1px solid var(--sy-rule);display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.sy-main .session h3{font-size:26px;line-height:1.18;max-width:18ch}
+.sy-main .session .sub{font-size:13.5px;font-weight:500;color:var(--sy-teal-deep);letter-spacing:0.03em;margin-top:8px}
+.sy-main .session p{max-width:none;font-size:15.5px}
+.sy-main .session .meta{margin-top:18px;padding-top:16px;border-top:1px solid var(--sy-rule);font-size:14.5px;line-height:1.6}
+.sy-main .session .meta p+p{margin-top:6px}
+
+/* ---------- audiences ---------- */
+.sy-main .aud{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:8px}
+.sy-main .aud li{border-top:1px solid var(--sy-gold);padding-top:20px}
+.sy-main .aud b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:22px;line-height:1.2;color:var(--sy-charcoal);margin-bottom:8px}
+.sy-main .aud p{font-size:15.5px;max-width:none}
+
+/* ---------- quotes ---------- */
+.sy-main .quotes{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.sy-main .quote{border-top:1px solid var(--sy-gold);padding-top:22px}
+.sy-main .quote p{font-family:var(--sy-serif);font-size:19px;line-height:1.42;color:var(--sy-charcoal);font-style:italic;max-width:none}
+.sy-main .quote cite{display:block;font-style:normal;margin-top:14px;font-size:13.5px;color:var(--sy-ink-soft);line-height:1.5}
+.sy-main .quote cite b{font-weight:500;color:var(--sy-charcoal2);display:block}
+
+@media (max-width:1024px){
+  .sy-main .session{grid-template-columns:1fr;gap:16px}
+  .sy-main .aud{grid-template-columns:1fr;gap:24px}
+}
+@media (max-width:840px){
+  .sy-main .section,.sy-main .open{padding:72px 0}
+  .sy-main .apart li{grid-template-columns:1fr;gap:8px}
+  .sy-main .quotes{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .sy-main .wrap{padding:0 22px}
+  .sy-main .cta-row{flex-direction:column;align-items:stretch}
+  .sy-main .cta-row .btn{width:100%}
+}
+</style>
+
+<div class="sy-main">
+
+<!-- ============ OPEN ============ -->
+<section class="open">
+  <div class="wrap">
+    <p class="eyebrow">Keynotes · Interactive Workshops · Executive Retreat Facilitation</p>
+    <p class="display">Most presentations get forgotten in the parking lot. <em class="accent">This is built to move the room.</em></p>
+    <p class="lede">Smart leaders don't need another lecture, and they certainly don't need someone reading slides at them. Dr. J pairs the analytical rigor of a business psychologist with experiential exercises that get even the most skeptical rooms engaged, debating, and walking away with tools they can use Monday morning.</p>
+    <div class="cta-row" style="margin-top:28px">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:16px 26px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Check Availability &amp; Inquire</a>
+      <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:16px 26px;border-radius:2px;white-space:nowrap;background:transparent;color:#252830;border:1px solid #3D4148;text-decoration:none;">Schedule a 15-Minute Call</a>
+    </div>
+    <p class="micro">200+ retreats and keynotes delivered. Built for conferences, CEO forums, and leadership retreats.</p>
+  </div>
+</section>
+
+<!-- ============ THE APPROACH ============ -->
+<section class="section tint">
+  <div class="wrap">
+    <h2>Experiential. Direct. <em class="accent">Uncomfortably useful.</em></h2>
+    <p class="hook">If you want someone to deliver a canned speech while people discreetly check email under the table, I'm not the right fit.</p>
+    <p>My background is in clinical and business psychology, but my classroom has been twenty years of closed-door sessions with entrepreneurs, manufacturers, contractors, and executive teams. I know how to read the temperature of a room in five minutes. I know where the unsaid things are hiding. And I know how to structure an experience so people aren't just listening to concepts — they're testing them in real time.</p>
+    <ul class="apart">
+      <li><b>No death by PowerPoint</b><p>Presentations are designed around structured inquiry, provocative self-audits, and live peer interaction. Slides are visual anchors, not a script.</p></li>
+      <li><b>Psychological safety built for skeptics</b><p>Experienced leaders are allergic to corporate fluff and touchy-feely team-building games. The exercises are grounded in behavioral science and designed for practical business application.</p></li>
+      <li><b>Action over inspiration</b><p>Inspiration fades by breakfast the next morning. Participants leave with identifiable patterns, diagnostic language, and concrete actions to bring back to their teams.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE SESSIONS ============ -->
+<section class="section">
+  <div class="wrap">
+    <h2>Programs built for engagement, <em class="accent">tailored to your room.</em></h2>
+    <p class="formats">Available as a 45–60 minute keynote, a 90-minute interactive working session, or an expanded half-day or full-day retreat framework.</p>
+    <ul class="sessions">
+      <li class="session">
+        <div>
+          <h3>Your Go-To Power Move (And Why It's Not Enough Anymore)</h3>
+          <p class="sub">The Anatomy of Leadership Influence</p>
+        </div>
+        <div>
+          <p>Every leader has a default tool they reach for when the pressure spikes. Some lean on authority; some lean on technical expertise; others rely on relationships or personal charisma. But what built your initial success often becomes the very bottleneck that stalls your organization. Grounded in the classic French &amp; Raven bases of social power, this session leads participants through a tactical self-audit to identify their default power moves, surface their blind spots under stress, and learn how to shift their teams from mere compliance to genuine ownership.</p>
+          <div class="meta">
+            <p><strong>Best for:</strong> Annual conferences, leadership summits, CEO peer forums, rising-executive academies.</p>
+            <p><strong>Key takeaway:</strong> A personal profile of how you actually exert influence under pressure, and how to diversify your power base so your team stops bottlenecking at your desk.</p>
+          </div>
+        </div>
+      </li>
+      <li class="session">
+        <div>
+          <h3>Keeping It Human: Friction, Trust, and Connection in an Automated World</h3>
+          <p class="sub">The Neuroscience of High-Performing Teams</p>
+        </div>
+        <div>
+          <p>When technology and AI eliminate operational friction, the remaining friction is entirely human. Many organizations mistake speed for effectiveness and polite agreement for alignment. In this session, Dr. J examines why healthy teams actually require friction, how leaders accidentally create "polite avoidance," and how to cultivate the psychological safety that allows hard truths to be spoken out loud without blowing up relationships.</p>
+          <div class="meta">
+            <p><strong>Best for:</strong> Executive retreats, cross-functional leadership gatherings, industry associations navigating rapid technological change.</p>
+            <p><strong>Key takeaway:</strong> The three observable signals of fake consensus, and a practical cadence for turning tension into clarity.</p>
+          </div>
+        </div>
+      </li>
+      <li class="session">
+        <div>
+          <h3>The Architecture of the Blind Spot</h3>
+          <p class="sub">Why Smart Companies Build Systems That Work Against Them</p>
+        </div>
+        <div>
+          <p>In twenty years of organizational work, the biggest breakdowns rarely stem from bad intentions. They stem from good intentions that created quiet, unintended structures underneath them. As companies grow through the $2M to $40M corridor, the communication loops, decision pathways, and authority structures that once enabled survival begin to suffocate scalability. Dr. J breaks down how to see what your daily proximity hides from you.</p>
+          <div class="meta">
+            <p><strong>Best for:</strong> Entrepreneurial networks, privately held company summits, family enterprise conferences.</p>
+            <p><strong>Key takeaway:</strong> A diagnostic framework to identify whether a recurring breakdown is an individual performance issue or a structural architecture problem.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AUDIENCES & FORMATS ============ -->
+<section class="section tint">
+  <div class="wrap">
+    <h2>Where Dr. J delivers best.</h2>
+    <ul class="aud">
+      <li><b>CEO &amp; Executive Forums</b><p>Fast-paced, candid, peer-to-peer facilitation for groups like REF, YPO, Vistage, or WPO, where members expect substance and zero jargon.</p></li>
+      <li><b>Industry &amp; Association Keynotes</b><p>Practical, high-energy sessions for trades, manufacturing, construction, and professional services conferences.</p></li>
+      <li><b>Board &amp; Executive Retreats</b><p>Custom facilitation guiding boards and leadership teams across critical transitions — moving from operational "doing" to strategic governing, or aligning during succession.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ WHAT ORGANIZERS & ATTENDEES SAY ============ -->
+<section class="section">
+  <div class="wrap">
+    <h2>What organizers and attendees say.</h2>
+    <div class="quotes">
+      <div class="quote">
+        <p>"Dr. Shannon Jennings was a featured speaker at the REF CIO Forum retreat. She led us in experiential learning exercises. The group enjoyed the exercises while learning a bit more about themselves. Dr. Shannon Jennings skillfully facilitated the group of professionals who are not generally excited about experiential exercises. I would recommend Business Psychologist Dr. Shannon Jennings for your corporate group or team."</p>
+        <cite><b>Clifford Clarke</b>REF Indiana, Facilitator Leaders – CIO Forum</cite>
+      </div>
+      <div class="quote">
+        <p>"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something engaging with us instead of just lecturing. It made the session more impactful."</p>
+        <cite><b>Dan New</b>President / CFO, Mid-City Supply</cite>
+      </div>
+      <div class="quote">
+        <p>"I really enjoyed your presentation! I was so impressed with all of the insights we were able to pull out of a few simple activities. My teams really need this! We are in a season of restructuring and growing. Change is painful and sometimes scary. I think you may be able to help give us tools and a path to navigate."</p>
+        <cite><b>Melissa Espinoza</b>Vice President of Finance, Loader Parts Source</cite>
+      </div>
+      <div class="quote">
+        <p>"Had a great time with the 3 levels game and understanding the importance of communication and expectations as you work together to achieve a similar goal."</p>
+        <cite><b>Micah Miller</b>CEO, Teledata</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
