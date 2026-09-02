@@ -1,0 +1,131 @@
+<!-- ============================================================
+     SYNCOVATE — SATURDAY SEED — MIDDLE CONTENT
+     (Nav and Footer are your Global Sections — this goes in the
+     Custom Code block between them.)
+
+     Note: this page was originally designed as a standalone landing
+     page with a stripped-down header/footer (just the wordmark and
+     a back link) rather than the full site nav, on the theory that
+     fewer exits = more signups. Using the standard global nav/footer
+     here trades some of that focus for consistency — worth deciding
+     on purpose rather than by default, but built to match the rest
+     of the site as asked.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-main *{margin:0;padding:0;box-sizing:border-box;text-align:left}
+.sy-main{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream);text-align:left}
+.sy-main a{color:inherit;text-decoration:none}
+.sy-main p{max-width:640px}
+.sy-main .wrap{max-width:1120px;margin-left:auto!important;margin-right:auto!important;padding:0 32px}
+.sy-main .eyebrow{font-size:12.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--sy-gold-deep,#9E6D41);margin:0 0 16px}
+.sy-main .display{font-family:var(--sy-serif);font-weight:500;font-size:clamp(38px,5.2vw,60px);line-height:1.1;letter-spacing:-0.01em;max-width:16ch;color:var(--sy-charcoal);text-wrap:balance}
+.sy-main .display em{font-style:italic;font-weight:500;color:#9E6D41}
+.sy-main h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(30px,3.4vw,38px);line-height:1.15;margin-bottom:16px;color:var(--sy-charcoal);text-wrap:balance}
+.sy-main .lede{font-size:19px;line-height:1.7;max-width:600px;color:var(--sy-charcoal2)}
+
+.sy-main .seed-hero{padding:96px 0 80px}
+.sy-main .seed-hero .lede{margin:24px 0 34px}
+.sy-main .signup{max-width:560px}
+.sy-main .signup .row{display:grid;grid-template-columns:1fr 1.4fr;gap:10px}
+.sy-main .signup input{
+  width:100%;font-family:var(--sy-sans);font-size:15px;font-weight:300;
+  padding:15px 16px;border:1px solid var(--sy-charcoal2);border-radius:2px;
+  background:var(--sy-white);color:var(--sy-charcoal);
+}
+.sy-main .signup input:focus{outline:2px solid var(--sy-gold);outline-offset:2px;border-color:var(--sy-gold)}
+.sy-main .signup input::placeholder{color:var(--sy-ink-soft)}
+.sy-main .signup .consent{display:flex;gap:10px;align-items:flex-start;margin:14px 0 18px;font-size:13.5px;color:var(--sy-ink-soft);line-height:1.5}
+.sy-main .signup .consent input{width:auto;margin-top:4px;accent-color:var(--sy-gold)}
+.sy-main .signup .btn-gold{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:16px 26px!important;
+  border-radius:2px!important;white-space:nowrap!important;cursor:pointer;text-decoration:none!important;
+  background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important;
+}
+.sy-main .signup .btn-gold:hover{background:#9E6D41!important;border-color:#9E6D41!important}
+.sy-main .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.sy-main .three-block{padding:76px 0;background:var(--sy-warmgray)}
+.sy-main .three{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;list-style:none}
+.sy-main .three li{border-top:1px solid var(--sy-gold);padding-top:20px}
+.sy-main .three h3{font-family:var(--sy-serif);font-weight:500;font-size:22px;margin-bottom:8px;color:var(--sy-charcoal)}
+.sy-main .three p{font-size:16px;max-width:none}
+
+.sy-main .seeds-block{padding:88px 0}
+.sy-main .seeds{list-style:none;margin:8px 0 0;border-top:1px solid var(--sy-rule);max-width:680px}
+.sy-main .seeds li{padding:16px 0 16px 26px;border-bottom:1px solid var(--sy-rule);font-family:var(--sy-serif);font-size:20px;line-height:1.3;color:var(--sy-charcoal);position:relative}
+.sy-main .seeds li::before{content:"";position:absolute;left:0;top:26px;width:12px;height:1px;background:var(--sy-gold)}
+.sy-main .reply{margin-top:28px;font-size:17px;line-height:1.65;color:var(--sy-charcoal);font-weight:400}
+
+@media (max-width:1024px){.sy-main .three{grid-template-columns:1fr;gap:24px}}
+@media (max-width:840px){
+  .sy-main .seed-hero{padding:72px 0 60px}
+  .sy-main .three-block,.sy-main .seeds-block{padding:56px 0}
+}
+@media (max-width:520px){
+  .sy-main .wrap{padding:0 22px}
+  .sy-main .signup .row{grid-template-columns:1fr}
+}
+</style>
+
+<div class="sy-main">
+
+<section class="seed-hero">
+  <div class="wrap">
+    <p class="eyebrow">The Saturday Seed</p>
+    <p class="display">One leadership idea you can <em>put into play Monday.</em></p>
+    <p class="lede">Every Saturday morning, one idea for owners and leaders of growing companies. Small enough to read over coffee, built to grow all week. Micro-learning designed to be applied and shared.</p>
+
+    <!-- GHL: replace this form with the Saturday Seed form embed. Keep the .signup wrapper so spacing holds. -->
+    <form class="signup" action="#" method="post" onsubmit="return false">
+      <div class="row">
+        <div><label class="sr" for="seedFirst">First name</label><input id="seedFirst" type="text" name="first_name" placeholder="First name"></div>
+        <div><label class="sr" for="seedEmail2">Email</label><input id="seedEmail2" type="email" name="email" placeholder="Email *" required></div>
+      </div>
+      <label class="consent"><input type="checkbox" name="consent" required><span>I agree to receive The Saturday Seed and occasional emails from Syncovate LLC / Dr. J</span></label>
+      <button class="btn-gold" type="submit">Send me the Saturday Seed</button>
+    </form>
+  </div>
+</section>
+
+<section class="three-block">
+  <div class="wrap">
+    <ul class="three">
+      <li><h3>One seed, every Saturday</h3><p>Lands in your inbox first thing in the morning. Short enough to read before the coffee's gone.</p></li>
+      <li><h3>Built for business</h3><p>Trades, manufacturing, family companies, professional services. Situations you'll recognize on sight.</p></li>
+      <li><h3>One move you can make</h3><p>Each one closes with a single step for the week ahead. Take the seed. Plant it. Watch it grow.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="seeds-block">
+  <div class="wrap">
+    <h2>A few seeds we've planted.</h2>
+    <ul class="seeds">
+      <li>Action items that outlive the meeting: a name, a deliverable, a date</li>
+      <li>The feedback your best people are holding back</li>
+      <li>What changes when you stop being the one with all the answers</li>
+      <li>The one-word question that resets a meeting</li>
+    </ul>
+    <p class="reply">Every seed ends the same way — hit reply and tell me what came up. I read every one.</p>
+  </div>
+</section>
+
+</div>
