@@ -1,0 +1,125 @@
+<!-- ============================================================
+     SYNCOVATE — FOOTER + SATURDAY SEED (current design)
+     Paste as ONE custom-code element, then save the section it
+     lives in as a Global Section so it can be reused across pages
+     from one place.
+     Turn off GHL's default "Copyrights 2026 | Terms" footer.
+     Swap the Saturday Seed form for your real form embed — keep
+     the .seed-form class on the wrapper so spacing holds.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif:     'Cormorant Garamond', Georgia, serif;
+  --sy-sans:      'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-footer *{margin:0;padding:0;box-sizing:border-box}
+.sy-footer{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream)}
+.sy-footer a{color:inherit;text-decoration:none}
+.sy-footer a:focus-visible,.sy-footer button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-footer .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.sy-footer .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.sy-footer .btn-gold{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:15px 24px!important;
+  border-radius:2px!important;white-space:nowrap!important;cursor:pointer;text-decoration:none!important;
+  background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important;
+  transition:background .18s ease,border-color .18s ease;
+}
+.sy-footer .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
+
+.sy-footer-inner{padding:64px 0 40px}
+.sy-footer .seed{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;padding:0 0 52px;margin-bottom:52px;border-bottom:1px solid var(--sy-rule)}
+.sy-footer .seed-name{font-family:var(--sy-serif)!important;font-size:28px!important;font-weight:500!important;margin-bottom:8px!important;color:var(--sy-charcoal)}
+.sy-footer .seed p{font-size:15.5px;color:var(--sy-ink);max-width:36ch}
+.sy-footer .seed-form{display:flex;gap:10px}
+.sy-footer .seed-form input{
+  flex:1;min-width:0;font-family:var(--sy-sans);font-size:15px;font-weight:300;
+  padding:15px 16px;border:1px solid var(--sy-charcoal2);border-radius:2px;
+  background:var(--sy-white);color:var(--sy-charcoal);
+}
+.sy-footer .seed-form input:focus{outline:2px solid var(--sy-gold);outline-offset:2px;border-color:var(--sy-gold)}
+.sy-footer .seed-form input::placeholder{color:var(--sy-ink-soft)}
+
+.sy-footer .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px}
+.sy-footer .brand-mark{font-family:var(--sy-serif);font-weight:600;font-size:18px;letter-spacing:0.08em;text-transform:uppercase;color:var(--sy-charcoal)}
+.sy-footer .tag{margin-top:12px;font-size:14.5px;color:var(--sy-ink-soft);max-width:34ch;line-height:1.6}
+.sy-footer h4{font-weight:500;font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:var(--sy-charcoal);margin-bottom:14px}
+.sy-footer ul{list-style:none}
+.sy-footer li{margin-bottom:9px;font-size:14.5px}
+.sy-footer li a{color:var(--sy-ink);border-bottom:1px solid transparent;transition:border-color .18s}
+.sy-footer li a:hover{border-bottom-color:var(--sy-gold)}
+.sy-footer .bottom{margin-top:48px;padding-top:22px;border-top:1px solid var(--sy-rule);font-size:13.5px;color:var(--sy-ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:840px){
+  .sy-footer .seed{grid-template-columns:1fr;gap:18px}
+  .sy-footer .top{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:520px){
+  .sy-footer .wrap{padding:0 22px}
+  .sy-footer .seed-form{flex-direction:column}
+  .sy-footer .seed-form .btn-gold{width:100%}
+}
+</style>
+<div class="sy-footer">
+<footer class="sy-footer-inner">
+  <div class="wrap">
+    <div class="seed">
+      <div>
+        <h4 class="seed-name">Saturday Seed</h4>
+        <p>One short email every Saturday. A thought worth carrying into the week. No pitch.</p>
+      </div>
+      <!-- GHL: replace this form with your Saturday Seed form embed. Keep the .seed-form class on the wrapper so the layout holds. -->
+      <form class="seed-form" action="#" method="post" onsubmit="return false">
+        <label class="sr" for="seedEmail">Email address</label>
+        <input id="seedEmail" type="email" name="email" placeholder="your@email.com" required>
+        <button class="btn-gold" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="top">
+      <div>
+        <div class="brand-mark">Syncovate</div>
+        <p class="tag">Organizational advisory for founders and owner-operators of growing, privately held companies. Based in Niles, Michigan. Working with leaders across Michiana and nationwide.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/how-i-work">How I Work</a></li>
+          <li><a href="https://syncovatellc.com/speaking">Speaking &amp; Facilitation</a></li>
+          <li><a href="https://syncovatellc.com/prism-blog">Field Notes</a></li>
+          <li><a href="https://syncovatellc.com/saturday-seed">Saturday Seed</a></li>
+          <li><a href="https://spotter.syncovatellc.com/">The Scotoma Spotter™</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
+          <li><a href="https://syncovatellc.com/contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/shannonsjennings/">LinkedIn</a></li>
+          <li><a href="tel:2692934442">269-293-4442</a></li>
+          <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
+          <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Syncovate LLC · Niles, Michigan</span>
+      <span>Dr. Shannon Jennings</span>
+    </div>
+  </div>
+</footer>
+</div>
