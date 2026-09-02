@@ -40,14 +40,15 @@
 .sy-nav .nav-links a:hover,.sy-nav .nav-links a[aria-current]{color:var(--sy-cream);border-bottom-color:var(--sy-gold)}
 .sy-nav .nav-cta{display:flex;align-items:center;gap:14px}
 .sy-nav .btn-gold{
-  display:inline-flex;align-items:center;justify-content:center;
-  font-family:var(--sy-sans);font-weight:500;font-size:13px;letter-spacing:0.02em;line-height:1;
-  padding:12px 20px;border-radius:2px;white-space:nowrap;
-  background:var(--sy-gold);color:#fff;border:1px solid var(--sy-gold);
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:13px!important;letter-spacing:0.02em!important;line-height:1!important;
+  padding:12px 20px!important;border-radius:2px!important;white-space:nowrap!important;
+  background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important;
+  text-decoration:none!important;
   transition:background .18s ease,border-color .18s ease,transform .12s ease;
 }
 .sy-nav .btn-gold:active{transform:translateY(1px)}
-.sy-nav .btn-gold:hover{background:var(--sy-gold-deep);border-color:var(--sy-gold-deep)}
+.sy-nav .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
 .sy-nav .nav-toggle{
   display:none;background:none;border:1px solid var(--sy-rule-dark);
   width:42px;height:42px;border-radius:2px;cursor:pointer;
@@ -79,7 +80,7 @@
       <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
     </ul>
     <div class="nav-cta">
-      <a class="btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a>
+      <a class="btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:13px;letter-spacing:0.02em;line-height:1;padding:12px 20px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Let's Talk</a>
       <button class="nav-toggle" id="syNavToggle" aria-label="Open menu" aria-expanded="false" aria-controls="syNavLinks">
         <span></span><span></span><span></span>
       </button>
