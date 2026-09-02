@@ -1,0 +1,285 @@
+<!-- ============================================================
+     SYNCOVATE — HOME PAGE MIDDLE CONTENT
+     (Hero through Closing. Nav and Footer are your Global Sections —
+     this goes in the Custom Code block between them.)
+
+     Paste as ONE block into that middle Custom Code element.
+     Same full-width-row / zero-column-padding fix applies here too.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-dim:       #C9C5BC;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-rule-dark: rgba(201,197,188,0.18);
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-main *{margin:0;padding:0;box-sizing:border-box}
+.sy-main{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink)}
+.sy-main a{color:inherit;text-decoration:none}
+.sy-main a:focus-visible,.sy-main button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-main strong{font-weight:500;color:var(--sy-charcoal)}
+.sy-main h1,.sy-main h2,.sy-main h3{text-wrap:balance}
+.sy-main p{max-width:640px}
+.sy-main .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+
+.sy-main .eyebrow{font-size:12.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--sy-gold-deep);margin:0 0 16px}
+.sy-main .display{font-family:var(--sy-serif);font-weight:500;font-size:clamp(40px,5.4vw,68px);line-height:1.07;letter-spacing:-0.01em;max-width:15ch}
+.sy-main h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(32px,3.6vw,44px);line-height:1.13;max-width:19ch;margin-bottom:20px}
+.sy-main h3{font-family:var(--sy-serif);font-weight:500;font-size:26px;line-height:1.2}
+.sy-main .lede{font-size:19.5px;line-height:1.7;max-width:600px}
+.sy-main em.accent{font-style:italic;font-weight:500;color:var(--sy-gold-deep)}
+
+.sy-main .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:17px 30px!important;
+  border-radius:2px!important;white-space:nowrap!important;text-decoration:none!important;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .12s ease;
+}
+.sy-main .btn:active{transform:translateY(1px)}
+.sy-main .btn-gold{background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important}
+.sy-main .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
+.sy-main .btn-ghost{background:transparent!important;color:var(--sy-cream)!important;border:1px solid var(--sy-rule-dark)!important}
+.sy-main .btn-ghost:hover{border-color:var(--sy-dim)!important;color:#fff!important}
+.sy-main .btn-line{background:transparent!important;color:var(--sy-charcoal)!important;border:1px solid var(--sy-charcoal2)!important}
+.sy-main .btn-line:hover{border-color:var(--sy-teal-deep)!important;color:var(--sy-teal-deep)!important}
+.sy-main .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+.sy-main .hero{background:var(--sy-charcoal2);color:var(--sy-cream);padding:112px 0 88px}
+.sy-main .hero .eyebrow{color:var(--sy-gold)}
+.sy-main .hero .display{color:var(--sy-cream)}
+.sy-main .hero .display em{font-style:italic;font-weight:500;color:var(--sy-gold)}
+.sy-main .hero .lede{color:var(--sy-dim);margin:28px 0 38px}
+.sy-main .hero .cta-note{margin-top:22px;font-size:15px;color:var(--sy-dim);max-width:520px}
+
+.sy-main .creds{background:var(--sy-cream);padding:68px 0;border-bottom:1px solid var(--sy-rule)}
+.sy-main .creds .wrap{display:flex;flex-wrap:wrap;column-gap:52px;row-gap:26px}
+.sy-main .cred{display:flex;align-items:baseline;gap:12px;max-width:280px}
+.sy-main .cred b{font-family:var(--sy-serif);font-weight:500;font-size:34px;line-height:1;color:var(--sy-charcoal);white-space:nowrap}
+.sy-main .cred span{font-size:14.5px;color:var(--sy-ink-soft);line-height:1.4}
+
+.sy-main .section{padding:100px 0;background:var(--sy-cream)}
+.sy-main .tint{background:var(--sy-warmgray)}
+
+.sy-main .problem-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:68px;align-items:start}
+.sy-main .problem p{color:var(--sy-charcoal2)}
+.sy-main .problem-close{margin-top:24px;font-size:18px;line-height:1.65;color:var(--sy-charcoal);font-weight:400;max-width:560px}
+.sy-main .pull{margin-top:56px;padding-left:30px;border-left:2px solid var(--sy-gold);font-family:var(--sy-serif);font-style:italic;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.42;color:var(--sy-charcoal);max-width:800px}
+
+.sy-main .chart-card{background:var(--sy-white);border:1px solid var(--sy-rule);border-radius:2px;padding:28px 28px 8px}
+.sy-main .chart-card .eyebrow{color:var(--sy-teal-deep);margin-bottom:6px}
+.sy-main .chart-card .cap{font-size:14px;color:var(--sy-ink-soft);line-height:1.55;margin-bottom:8px;max-width:none}
+.sy-main .flow{width:100%;height:auto;display:block}
+.sy-main .flow .line{stroke:var(--sy-rule);stroke-width:1.2}
+.sy-main .flow .node{fill:var(--sy-warmgray);stroke:var(--sy-charcoal2);stroke-width:1.2}
+.sy-main .flow .hub{fill:var(--sy-gold)}
+.sy-main .flow .label{font-family:var(--sy-sans);font-size:10.5px;font-weight:500;fill:var(--sy-ink-soft)}
+.sy-main .flow .hub-label{font-family:var(--sy-sans);font-size:10.5px;font-weight:600;letter-spacing:0.04em;fill:var(--sy-white)}
+
+.sy-main .signals-lead{font-family:var(--sy-serif);font-weight:500;font-size:clamp(24px,2.4vw,28px);line-height:1.3;color:var(--sy-charcoal);margin-bottom:4px}
+.sy-main .signals{list-style:none;margin:10px 0 0;border-top:1px solid var(--sy-rule)}
+.sy-main .signals li{padding:18px 0 18px 26px;border-bottom:1px solid var(--sy-rule);font-family:var(--sy-serif);font-size:21px;line-height:1.3;color:var(--sy-charcoal);position:relative}
+.sy-main .signals li::before{content:"";position:absolute;left:0;top:29px;width:12px;height:1px;background:var(--sy-gold)}
+
+.sy-main .ways-head{max-width:640px;margin-bottom:8px}
+.sy-main .ways-note{color:var(--sy-ink-soft);font-size:16px;margin-bottom:8px}
+.sy-main .ways{list-style:none;border-top:1px solid var(--sy-rule);margin-top:36px}
+.sy-main .ways li{border-bottom:1px solid var(--sy-rule)}
+.sy-main .ways a{display:grid;grid-template-columns:250px 1fr auto;gap:40px;align-items:baseline;padding:38px 0;transition:padding-left .2s ease}
+.sy-main .ways a:hover{padding-left:12px}
+.sy-main .ways a:hover h3{color:var(--sy-gold-deep)}
+.sy-main .ways .tag{font-size:13px;font-weight:500;color:var(--sy-teal-deep);letter-spacing:0.03em;display:block;margin-bottom:8px}
+.sy-main .ways p{font-size:16px;color:var(--sy-ink);line-height:1.65;max-width:480px}
+.sy-main .ways .go{font-size:14px;font-weight:500;color:var(--sy-charcoal2);white-space:nowrap;border-bottom:1px solid var(--sy-gold);padding-bottom:2px}
+
+.sy-main .about-grid{display:grid;grid-template-columns:420px 1fr;gap:76px;align-items:center}
+.sy-main .portrait{aspect-ratio:4/5;border-radius:2px;background:linear-gradient(155deg,var(--sy-warmgray),var(--sy-cream));display:flex;align-items:center;justify-content:center;border:1px solid var(--sy-rule)}
+.sy-main .portrait .cap{font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--sy-ink-soft);text-align:center;max-width:16ch}
+.sy-main .about-copy p+p{margin-top:20px}
+.sy-main .about-copy .kicker{font-weight:500;font-size:19px;line-height:1.6;color:var(--sy-charcoal);margin-top:24px}
+.sy-main .about-copy .textlink{display:inline-block;margin-top:28px;font-weight:500;font-size:15px;color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45);padding-bottom:1px}
+
+.sy-main .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.sy-main .quote{border-top:1px solid var(--sy-gold);padding-top:26px}
+.sy-main .quote p{font-family:var(--sy-serif);font-size:21px;line-height:1.4;color:var(--sy-charcoal);font-style:italic;max-width:none}
+.sy-main .quote cite{display:block;font-style:normal;margin-top:18px;font-size:14px;color:var(--sy-ink-soft);line-height:1.5}
+.sy-main .quote cite b{font-weight:500;color:var(--sy-charcoal2);display:block}
+.sy-main .affil{margin-top:64px;padding-top:28px;border-top:1px solid var(--sy-rule)}
+.sy-main .affil-list{display:flex;flex-wrap:wrap;gap:12px 36px;font-size:13.5px;color:var(--sy-ink-soft)}
+
+.sy-main .close{background:var(--sy-warmgray);padding:104px 0}
+.sy-main .close .inner{max-width:700px}
+.sy-main .close .lede{color:var(--sy-charcoal);margin-bottom:36px;font-size:19.5px;line-height:1.65}
+.sy-main .close .cta-note{margin-top:22px;font-size:15px;color:var(--sy-ink-soft)}
+.sy-main .close .cta-note a{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45)}
+
+@media (max-width:1024px){
+  .sy-main .problem-grid{grid-template-columns:1fr;gap:44px}
+  .sy-main .about-grid{grid-template-columns:340px 1fr;gap:52px}
+  .sy-main .quotes{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:840px){
+  .sy-main .hero{padding:84px 0 68px}
+  .sy-main .section{padding:76px 0}
+  .sy-main .close{padding:84px 0}
+  .sy-main .about-grid{grid-template-columns:1fr;gap:36px}
+  .sy-main .portrait{max-width:380px}
+  .sy-main .ways a{grid-template-columns:1fr;gap:10px;padding:30px 0}
+}
+@media (max-width:520px){
+  .sy-main .wrap{padding:0 22px}
+  .sy-main .display{font-size:36px}
+  .sy-main .signals li{font-size:19px}
+  .sy-main .btn{width:100%}
+  .sy-main .cta-row{flex-direction:column;align-items:stretch}
+}
+</style>
+
+<div class="sy-main">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Dr. J — Organizational Advisor for Founders &amp; Owner-Operators</p>
+    <h1 class="display">Your team keeps coming to you for everything. You've tried fixing it. <em>It came back.</em></h1>
+    <p class="lede">That's not a people problem. It's a structural one. The way decisions get made, ownership gets defined, and authority flows — all of it organized itself around you. Not by design. That's just the nature of growth.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Book a 15-Minute Call</a>
+      <a class="btn btn-ghost" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:transparent;color:#FAF8F5;border:1px solid rgba(201,197,188,0.18);text-decoration:none;">Grab Coffee in Michiana</a>
+    </div>
+    <p class="cta-note">Coffee if you're local, a call if you're not. We just connect and see if I can help.</p>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<div class="creds">
+  <div class="wrap">
+    <div class="cred"><b>20 yrs</b><span>Working alongside founders and leaders</span></div>
+    <div class="cred"><b>200+</b><span>Retreats and working sessions facilitated</span></div>
+    <div class="cred"><b>PsyD</b><span>Doctorate, Business Psychology</span></div>
+    <div class="cred"><b>Fellow</b><span>Strategic Doing Institute</span></div>
+  </div>
+</div>
+
+<!-- ============ THE PROBLEM + DIAGRAM ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div class="problem">
+        <h2>The issue isn't visible from inside <em class="accent">what you built.</em></h2>
+        <p>It's that smart people — in trades, manufacturing, family businesses — build systems around themselves without realizing it. The processes, the communication patterns, the culture: all of it made sense when you built it. Then the business grew, and what held it together started working against it.</p>
+        <p class="problem-close">I find the gap between where you think you are and where you actually are. Then we figure out the next best step to get moving in the right direction.</p>
+        <blockquote class="pull">In twenty years of this work, I've never walked into a leadership system where the blind spot was created by bad intentions. It's almost always good intentions — and the assumptions that grew up quietly underneath them.</blockquote>
+      </div>
+
+      <div>
+        <p class="signals-lead">You feel it before you can name it.</p>
+        <ul class="signals">
+          <li>Good people underperforming.</li>
+          <li>Meetings that produce motion but not movement.</li>
+          <li>A leadership team that agrees in the room and does their own thing once they leave.</li>
+          <li>Someone you love in a role they can't grow into, and everyone can feel it.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WAYS IN ============ -->
+<section class="section tint">
+  <div class="wrap">
+    <h2 class="ways-head">Two ways we work together.</h2>
+    <p class="ways-note">Not sure which one? That's what the first conversation is for.</p>
+    <ul class="ways">
+      <li>
+        <a href="https://syncovatellc.com/how-i-work">
+          <div><span class="tag">For owners and their teams</span><h3>Advising &amp; Facilitation</h3></div>
+          <p>Get me in a room with your team for a session that's been run many times and works, or work with me one-on-one between the big moments. Both start with a conversation.</p>
+          <span class="go">See how it works</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://syncovatellc.com/speaking">
+          <div><span class="tag">For conferences, forums, and retreats</span><h3>Speaking &amp; Facilitation</h3></div>
+          <p>Keynotes, retreat facilitation, and working sessions built around what your room needs to shift — not a packaged program. 200+ sessions across industries.</p>
+          <span class="go">Bring Dr. J in</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="portrait">
+        <span class="cap">Dr. Shannon Jennings — portrait</span>
+      </div>
+      <div class="about-copy">
+        <h2>The higher you climb, the fewer people <em class="accent">tell you the truth.</em></h2>
+        <p>Your team watches what you react to. Your partners — or your family — want certainty. Your peers are competitors. There's no one left who will tell you the thing you actually need to hear — or ask the question that cracks the problem open.</p>
+        <p>That's the gap I work in. I bring the analytical tools of a strategist and the human insight of a clinician — 20 years inside leadership systems, trained in the psychology of organizations and the architecture of how they actually behave under pressure. I see what the dynamics in your business are doing to your results. And I know how to work with people through the hard parts, not just around them.</p>
+        <p class="kicker">Sometimes that's a single session to get clarity on a decision that's been sitting too long. Sometimes it's a year of calls that become the one room where you don't have to be the one with the answers. You don't have to filter with me.</p>
+        <a class="textlink" href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section tint" style="padding-bottom:100px">
+  <div class="wrap">
+    <div class="quotes">
+      <div class="quote">
+        <p>"Dr. J has so much experience and knowledge around family business, business psychology, and regenerative leadership. It's a joy working with her and the Syncovate team. She continually provides fresh perspectives, and ways to better understand the complexity of the human brain, business and the world!"</p>
+        <cite><b>Tyler Kanczuzewski</b>VP of Sustainability, Inovateus Solar</cite>
+      </div>
+      <div class="quote">
+        <p>"Dr. J was great to work with. We learned a lot about how our frontline can feel blind at times leading to disengagement. We also learned a lot about middle management not focusing on the frontline enough, leading to frustration. And even top leaders not being able to communicate properly or be heard was a huge eye opener as well. I definitely learned a lot from this experience and would recommend it to any organization."</p>
+        <cite><b>Anthony Kulikowski</b>Owner, Five Star Painting</cite>
+      </div>
+      <div class="quote">
+        <p>"Dr. Jennings played a key role in creating and implementing our strategic plan, including creating and maintaining organizational alignment and engagement through meeting structures and communication initiatives."</p>
+        <cite><b>Willy Veldman</b>President, Veldman's Inc.</cite>
+      </div>
+    </div>
+    <div class="affil">
+      <div class="affil-list">
+        <span>Edward Lowe Foundation</span>
+        <span>Society of Consulting Psychology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="close">
+  <div class="wrap">
+    <div class="inner">
+      <h2>Let's talk.</h2>
+      <p class="lede">You can't get to know me from a website (at least not one anyone wants to read). I'd love to sit down and talk — coffee if you're local, a call if you're not. We just connect and see if I can help.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Book a 15-Minute Call</a>
+        <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:transparent;color:#252830;border:1px solid #3D4148;text-decoration:none;">Grab Coffee in Michiana</a>
+      </div>
+      <p class="cta-note">Or <a href="mailto:Shannon@SyncovateLLC.com">email me a few times that work</a> and we'll find a spot to meet.</p>
+    </div>
+  </div>
+</section>
+
+</div>
