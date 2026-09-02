@@ -1,0 +1,99 @@
+<!-- ============================================================
+     SYNCOVATE — CONTACT — MIDDLE CONTENT
+     (Nav and Footer are your Global Sections — this goes in the
+     Custom Code block between them.)
+     Short page — built as one block. If you see the same edge-
+     to-edge/padding issue here, check the column padding on this
+     row same as the other pages.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-main *{margin:0;padding:0;box-sizing:border-box;text-align:left}
+.sy-main{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream);text-align:left}
+.sy-main a{color:inherit;text-decoration:none}
+.sy-main a:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-main p{max-width:640px}
+.sy-main .wrap{max-width:1120px;margin-left:auto!important;margin-right:auto!important;padding:0 32px}
+.sy-main .eyebrow{font-size:12.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--sy-gold-deep);margin:0 0 16px}
+.sy-main h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(32px,3.6vw,44px);line-height:1.13;margin-bottom:20px;color:var(--sy-charcoal);text-wrap:balance}
+.sy-main .lede{font-size:19px;line-height:1.7;max-width:600px;color:var(--sy-charcoal2)}
+
+.sy-main .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:17px 30px!important;
+  border-radius:2px!important;white-space:nowrap!important;text-decoration:none!important;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.sy-main .btn-gold{background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important}
+.sy-main .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
+.sy-main .btn-line{background:transparent!important;color:var(--sy-charcoal)!important;border:1px solid var(--sy-charcoal2)!important}
+.sy-main .btn-line:hover{border-color:var(--sy-teal-deep)!important;color:var(--sy-teal-deep)!important}
+.sy-main .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+
+.sy-main .contact-hero{padding:100px 0 64px}
+.sy-main .contact-hero .lede{margin:22px 0 34px}
+
+.sy-main .ways-block{padding:56px 0 100px;background:var(--sy-warmgray)}
+.sy-main .ways-contact{list-style:none;border-top:1px solid var(--sy-rule);max-width:820px}
+.sy-main .ways-contact li{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--sy-rule);align-items:baseline}
+.sy-main .ways-contact b{font-family:var(--sy-serif);font-weight:500;font-size:22px;line-height:1.2;color:var(--sy-charcoal)}
+.sy-main .ways-contact p{max-width:none;font-size:16px}
+.sy-main .ways-contact a{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45);padding-bottom:1px}
+.sy-main .ways-contact a:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+.sy-main .where{margin-top:36px;font-size:15.5px;color:var(--sy-ink-soft);max-width:640px}
+
+@media (max-width:840px){
+  .sy-main .contact-hero{padding:76px 0 48px}
+  .sy-main .ways-block{padding:44px 0 76px}
+  .sy-main .ways-contact li{grid-template-columns:1fr;gap:6px}
+}
+@media (max-width:520px){
+  .sy-main .wrap{padding:0 22px}
+  .sy-main .cta-row{flex-direction:column;align-items:stretch}
+  .sy-main .btn{width:100%}
+}
+</style>
+
+<div class="sy-main">
+
+<section class="contact-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's talk.</h2>
+    <p class="lede">You can't get to know me from a website (at least not one anyone wants to read). I'd love to sit down and talk — coffee if you're local, a call if you're not. We just connect and see if I can help.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Book a 15-Minute Call</a>
+      <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:transparent;color:#252830;border:1px solid #3D4148;text-decoration:none;">Grab Coffee in Michiana</a>
+    </div>
+  </div>
+</section>
+
+<section class="ways-block">
+  <div class="wrap">
+    <ul class="ways-contact">
+      <li><b>Email</b><p><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a> — send a few times that work and we'll find a spot to meet.</p></li>
+      <li><b>Phone</b><p><a href="tel:2692934442">269-293-4442</a> — if I don't pick up, I'm in a room with someone. Leave a message and I'll call back.</p></li>
+      <li><b>LinkedIn</b><p><a href="https://www.linkedin.com/in/shannonsjennings/">Shannon Jennings</a> — where I post most weeks.</p></li>
+    </ul>
+    <p class="where">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region — Kalamazoo to Fort Wayne — regularly, and I work virtually with owners across the country.</p>
+  </div>
+</section>
+
+</div>
