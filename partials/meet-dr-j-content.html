@@ -1,0 +1,197 @@
+<!-- ============================================================
+     SYNCOVATE — MEET DR. J — MIDDLE CONTENT
+     (Nav and Footer are your Global Sections — this goes in the
+     Custom Code block between them.)
+     Paste as ONE block. The closing "Let's talk." section is
+     separate — see meet-dr-j-closing.html — paste it in its own
+     row directly below this one.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-main *{margin:0;padding:0;box-sizing:border-box;text-align:left}
+.sy-main{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:var(--sy-ink);background:var(--sy-cream);text-align:left}
+.sy-main a{color:inherit;text-decoration:none}
+.sy-main a:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-main strong{font-weight:500;color:var(--sy-charcoal)}
+.sy-main h1,.sy-main h2,.sy-main h3{text-wrap:balance}
+.sy-main p{max-width:640px}
+.sy-main p+p{margin-top:18px}
+.sy-main .wrap{max-width:1120px;margin-left:auto!important;margin-right:auto!important;padding:0 32px}
+.sy-main .section{padding:96px 0}
+.sy-main .tint{background:var(--sy-warmgray)}
+
+.sy-main .eyebrow{font-size:12.5px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--sy-gold-deep);margin:0 0 16px}
+.sy-main .display{font-family:var(--sy-serif);font-weight:500;font-size:clamp(38px,5vw,58px);line-height:1.1;letter-spacing:-0.01em;max-width:13ch;color:var(--sy-charcoal)}
+.sy-main h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(30px,3.4vw,42px);line-height:1.15;max-width:19ch;margin-bottom:22px;color:var(--sy-charcoal)}
+.sy-main em.accent{font-style:italic;font-weight:500;color:var(--sy-gold-deep)}
+.sy-main .lede{font-size:19px;line-height:1.7;max-width:600px;color:var(--sy-charcoal2)}
+
+.sy-main .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:16px 26px!important;
+  border-radius:2px!important;white-space:nowrap!important;text-decoration:none!important;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.sy-main .btn-gold{background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important}
+.sy-main .btn-gold:hover{background:var(--sy-gold-deep)!important;border-color:var(--sy-gold-deep)!important;color:#fff!important}
+
+/* ---------- hero ---------- */
+.sy-main .hero{padding:96px 0 80px}
+.sy-main .hero-grid{display:grid;grid-template-columns:1fr 380px;gap:64px;align-items:center}
+.sy-main .hero-grid .lede{margin:24px 0 32px}
+.sy-main .portrait{aspect-ratio:4/5;border-radius:2px;background:linear-gradient(155deg,var(--sy-warmgray),var(--sy-cream));display:flex;align-items:center;justify-content:center;border:1px solid var(--sy-rule)}
+.sy-main .portrait .cap{font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:var(--sy-ink-soft);text-align:center;max-width:16ch}
+
+/* ---------- prose sections ---------- */
+.sy-main .lead-in{font-family:var(--sy-serif);font-size:23px;line-height:1.35;color:var(--sy-charcoal);margin-bottom:24px}
+
+/* ---------- what it's like ---------- */
+.sy-main .hook{font-family:var(--sy-serif);font-size:22px;line-height:1.35;color:var(--sy-charcoal);margin-bottom:8px}
+.sy-main .beats{list-style:none;margin:32px 0 0;border-top:1px solid var(--sy-rule);max-width:820px}
+.sy-main .beats li{display:grid;grid-template-columns:220px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--sy-rule)}
+.sy-main .beats b{font-family:var(--sy-serif);font-weight:500;font-size:23px;line-height:1.2;color:var(--sy-charcoal)}
+.sy-main .beats p{max-width:none;font-size:16px}
+.sy-main .shape{margin-top:36px;font-size:16.5px;line-height:1.7;max-width:760px}
+.sy-main .quotes{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:56px}
+.sy-main .quote{border-top:1px solid var(--sy-gold);padding-top:22px}
+.sy-main .quote p{font-family:var(--sy-serif);font-size:19px;line-height:1.42;color:var(--sy-charcoal);font-style:italic;max-width:none}
+.sy-main .quote cite{display:block;font-style:normal;margin-top:14px;font-size:13.5px;color:var(--sy-ink-soft);line-height:1.5}
+.sy-main .quote cite b{font-weight:500;color:var(--sy-charcoal2);display:block}
+
+/* ---------- the record ---------- */
+.sy-main .record{background:var(--sy-cream);border-top:1px solid var(--sy-rule);border-bottom:1px solid var(--sy-rule);padding:60px 0}
+.sy-main .record-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 40px}
+.sy-main .rec b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:21px;line-height:1.25;color:var(--sy-charcoal);margin-bottom:8px}
+.sy-main .rec span{font-size:14px;color:var(--sy-ink-soft);line-height:1.5;display:block}
+
+/* ---------- media ---------- */
+.sy-main .media{padding:48px 0}
+.sy-main .media .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:14px 36px}
+.sy-main .media p{font-size:16px;max-width:none}
+.sy-main .media .links{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14.5px;font-weight:500}
+.sy-main .media .links a{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45);padding-bottom:1px}
+
+@media (max-width:1024px){
+  .sy-main .hero-grid{grid-template-columns:1fr 320px;gap:44px}
+  .sy-main .record-grid{grid-template-columns:1fr 1fr}
+  .sy-main .quotes{grid-template-columns:1fr}
+}
+@media (max-width:840px){
+  .sy-main .hero{padding:72px 0 56px}
+  .sy-main .section,.sy-main .record{padding:64px 0}
+  .sy-main .hero-grid{grid-template-columns:1fr;gap:36px}
+  .sy-main .portrait{max-width:340px;order:-1}
+  .sy-main .beats li{grid-template-columns:1fr;gap:8px}
+  .sy-main .record-grid{grid-template-columns:1fr}
+}
+@media (max-width:520px){.sy-main .wrap{padding:0 22px}}
+</style>
+
+<div class="sy-main">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Dr. Shannon Jennings · Dr. J</p>
+      <p class="display">I love the way <em class="accent">entrepreneurs think.</em></p>
+      <p class="lede">I've spent my whole career around people who built something from nothing — and I never get tired of it. The way their brains work, connecting a supplier problem to something their kid said to a podcast they half-heard — that energizes me. It's what gets me out of bed Monday morning, excited to see what the week brings.</p>
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:16px 26px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Let's Talk</a>
+    </div>
+    <div class="portrait">
+      <span class="cap">Dr. Shannon Jennings — portrait</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW I GOT HERE ============ -->
+<section class="section tint">
+  <div class="wrap">
+    <h2>The problem people bring you is almost never <em class="accent">the real problem.</em></h2>
+    <p>I learned that early, working with families in the hardest situations — divorce, custody, the stuff where somebody's kids are on the line. The real problem was the structure around them. The unspoken rules. What everybody knew behind closed doors but nobody said in the hallway.</p>
+    <p>I carried that into business at the Edward Lowe Foundation, running peer retreats for entrepreneurs and CEOs. Their whole mission was to champion the entrepreneurial spirit — and I'm still living that mission more than a decade after I left. Because these companies matter. The ones growing in your town, hiring locally, sponsoring the little leagues, putting money back in — they hold communities together, especially now, when a lot of other things are falling apart. That's who I've built my work around.</p>
+    <p>Here's what I've learned in all those rooms: when you build something, you're in it. The business and the person aren't two separate things. Your money, your identity, your relationships, how you sleep — it's all tied up in the thing you made. That's true for the trades contractor and the manufacturer and the professional-services owner, and it gets even more tangled in a family business, where the succession talk is also a family talk and the org chart and the dinner table are the same table. You have to see the whole picture to be any real use in any of it. That's the work I love most.</p>
+  </div>
+</section>
+
+<!-- ============ WHY A BUSINESS PSYCHOLOGIST ============ -->
+<section class="section">
+  <div class="wrap">
+    <h2>Why a Business Psychologist?</h2>
+    <p class="lead-in">My doctorate in business psychology put real, evidence-based structure around what twenty years of closed doors had already taught me.</p>
+    <p>I kept seeing the same thing: leaders with the best of intentions, working incredibly hard, and their teams were fracturing and the work was stalling out. The assumption was always a people problem — fix the difficult personality, hire better talent.</p>
+    <p>Look closer and it's rarely a people problem. It's an architecture problem.</p>
+    <p>When you build a company from scratch, the system organizes itself around you. The processes, the communication patterns, the way authority flows — all of it made sense when the company was small. Then the business grows, and the structure that helped it survive starts to suffocate it. You built it, which makes you the worst person to see what's broken in it. Not because anything's wrong with you. Because you're inside it.</p>
+    <p>You can't fix what you can't see from inside. My job is to be the person who can see the architecture of your blind spots — and stay in the room until something actually moves.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT IT'S LIKE ============ -->
+<section class="section tint">
+  <div class="wrap">
+    <h2>Direct. Not one-sided. <em class="accent">In it with you.</em></h2>
+    <p class="hook">If you want someone to nod along and tell you the plan looks great, I'm not the right fit.</p>
+    <ul class="beats">
+      <li><b>I listen first.</b><p>Long enough that you'll probably say the thing you weren't planning to say. Then I say my piece, plainly.</p></li>
+      <li><b>I don't take sides.</b><p>Not the owner's, not the team's, not the family's. That's usually why people open up in the first place.</p></li>
+      <li><b>I won't talk down to you.</b><p>If you built your leadership by doing it instead of studying it, you know more than you're giving yourself credit for. I'm not here to replace what you've got. I'm here to help you see it clearly and use it better.</p></li>
+      <li><b>I stay.</b><p>Insight is the easy part. The hard part is next Tuesday, when you have to do something with it. I'm in the room for that, too.</p></li>
+    </ul>
+    <p class="shape">The work takes whatever shape the situation calls for. One session to get a stuck decision unstuck. A year of monthly calls that become the one place you can think out loud without consequences. Me in a room with your team when they've stopped being honest with each other. What it isn't: therapy — that's a different practice — or a program you work through on a schedule. And when I stop being useful, I'll say so.</p>
+
+    <div class="quotes">
+      <div class="quote">
+        <p>"I was trying to describe what it's like working with Dr. J and I kept coming back to one thing: she teaches you how to fish, shows you where to fish, helps you hook it, guides you on filleting it, and shows you how to cook it too. She sets herself apart by not only asking the right questions — she follows up with good ideas and how to actually get it done. The breadth of what she covers is impressive, but it doesn't feel overwhelming. It feels like having a partner who's in it with you."</p>
+        <cite><b>Jordan New</b>CEO, Mid City Supply</cite>
+      </div>
+      <div class="quote">
+        <p>"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said."</p>
+        <cite><b>Chase Meeks</b>Senior Accounts Manager, G&amp;G Hauling &amp; Excavating, Inc.</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE RECORD ============ -->
+<div class="record">
+  <div class="wrap record-grid">
+    <div class="rec"><b>Doctorate in Business Psychology</b><span>How organizations actually work, and how the people inside them behave as a system.</span></div>
+    <div class="rec"><b>APA Council Representative</b><span>Elected to represent Division 13, the Society of Consulting Psychology, on the American Psychological Association's Council. 2025–2027.</span></div>
+    <div class="rec"><b>Fellow, Strategic Doing Institute</b><span>A peer-selected fellowship in a method for moving groups through complex, tangled challenges. Practitioner-certified and faculty-level.</span></div>
+    <div class="rec"><b>Edward Lowe Foundation</b><span>Five years designing and facilitating peer retreats for entrepreneurs, leadership teams, and nonprofit leaders.</span></div>
+    <div class="rec"><b>200+ retreats and strategy sessions</b><span>Trades, manufacturing, family business, nonprofit, healthcare, professional services.</span></div>
+    <div class="rec"><b>Pixel Perspectives+ 360 Certified</b><span>A multi-rater feedback tool that shows leaders how they actually land on the people around them.</span></div>
+  </div>
+</div>
+
+<!-- ============ SPEAKING & MEDIA ============ -->
+<section class="media">
+  <div class="wrap">
+    <p>Planning an event or writing something? Official bio and headshots are here.</p>
+    <div class="links">
+      <!-- GHL: point these at the uploaded PDF and ZIP once they exist -->
+      <a href="#TODO-bio-media-sheet">Download Bio &amp; Media Sheet (PDF)</a>
+      <a href="#TODO-headshots">Download Headshots (ZIP)</a>
+    </div>
+  </div>
+</section>
+
+</div>
