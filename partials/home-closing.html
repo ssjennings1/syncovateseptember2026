@@ -1,0 +1,62 @@
+<!-- ============================================================
+     SYNCOVATE — HOME PAGE CLOSING ("Let's talk.")
+     Its own separate Custom Code block/row, pasted directly below
+     the main home-content block and above the footer.
+     Same full-width-row / zero-column-padding fix applies here too.
+     ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sy-gold:      #BF8756;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-warmgray:  #F0EDE8;
+  --sy-ink-soft:  #6A6E76;
+  --sy-teal-deep: #3F8C9D;
+  --sy-serif: 'Cormorant Garamond', Georgia, serif;
+  --sy-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+}
+.sy-close *{margin:0;padding:0;box-sizing:border-box;text-align:left}
+.sy-close{font-family:var(--sy-sans);font-weight:300;font-size:17px;line-height:1.75;color:#33363E;background:var(--sy-warmgray);padding:104px 0;text-align:left}
+.sy-close a{color:inherit;text-decoration:none}
+.sy-close a:focus-visible,.sy-close button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+.sy-close .wrap{max-width:1120px;margin-left:auto!important;margin-right:auto!important;padding:0 32px}
+.sy-close .inner{max-width:700px;margin-left:0!important;margin-right:auto!important}
+.sy-close h2{font-family:var(--sy-serif);font-weight:500;font-size:clamp(32px,3.6vw,44px);line-height:1.13;margin-bottom:20px;color:var(--sy-charcoal)}
+.sy-close .lede{color:var(--sy-charcoal);margin-bottom:36px;font-size:19.5px;line-height:1.65;max-width:600px}
+.sy-close .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.sy-close .btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  font-family:var(--sy-sans)!important;font-weight:500!important;font-size:14px!important;
+  letter-spacing:0.02em!important;line-height:1!important;padding:17px 30px!important;
+  border-radius:2px!important;white-space:nowrap!important;text-decoration:none!important;
+  transition:background .18s ease,color .18s ease,border-color .18s ease;
+}
+.sy-close .btn-gold{background:var(--sy-gold)!important;color:#fff!important;border:1px solid var(--sy-gold)!important}
+.sy-close .btn-gold:hover{background:#9E6D41!important;border-color:#9E6D41!important;color:#fff!important}
+.sy-close .btn-line{background:transparent!important;color:var(--sy-charcoal)!important;border:1px solid var(--sy-charcoal2)!important}
+.sy-close .btn-line:hover{border-color:var(--sy-teal-deep)!important;color:var(--sy-teal-deep)!important}
+.sy-close .cta-note{margin-top:22px;font-size:15px;color:var(--sy-ink-soft)}
+.sy-close .cta-note a{color:var(--sy-teal-deep);border-bottom:1px solid rgba(86,173,191,0.45)}
+@media (max-width:840px){.sy-close{padding:84px 0}}
+@media (max-width:520px){
+  .sy-close .wrap{padding:0 22px}
+  .sy-close .cta-row{flex-direction:column;align-items:stretch}
+  .sy-close .btn{width:100%}
+}
+</style>
+<section class="sy-close">
+  <div class="wrap">
+    <div class="inner">
+      <h2>Let's talk.</h2>
+      <p class="lede">You can't get to know me from a website (at least not one anyone wants to read). I'd love to sit down and talk — coffee if you're local, a call if you're not. We just connect and see if I can help.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:#BF8756;color:#fff;border:1px solid #BF8756;text-decoration:none;">Book a 15-Minute Call</a>
+        <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" style="display:inline-flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:500;font-size:14px;letter-spacing:0.02em;line-height:1;padding:17px 30px;border-radius:2px;white-space:nowrap;background:transparent;color:#252830;border:1px solid #3D4148;text-decoration:none;">Grab Coffee in Michiana</a>
+      </div>
+      <p class="cta-note">Or <a href="mailto:Shannon@SyncovateLLC.com">email me a few times that work</a> and we'll find a spot to meet.</p>
+    </div>
+  </div>
+</section>
