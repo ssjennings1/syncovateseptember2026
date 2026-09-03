@@ -83,6 +83,8 @@
   .sy-main .wrap{padding:0 22px}
   .sy-main .signup .row{grid-template-columns:1fr}
 }
+/* GHL engine CSS hardcodes 10px side padding on every .c-row at <=767px (not editable in the visual editor). Override it here since this stylesheet loads after GHL's base CSS and wins the tie-break. */
+@media (max-width:767px){.c-row{padding-left:0!important;padding-right:0!important}}
 </style>
 
 <div class="sy-main">
